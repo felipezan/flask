@@ -1150,7 +1150,7 @@ class Flask(App):
 
         # unpack tuple returns
         if isinstance(rv, tuple):
-            len_rv = len(rv)
+            len_rv = len(rv) - 2
 
             # a 3-tuple is unpacked directly
             if len_rv == 3:
